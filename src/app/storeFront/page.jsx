@@ -68,7 +68,7 @@ export default function Page() {
                 <p>Are you tired of the mundane? Yearning for a touch of whimsy in your life? Well, look no further!
                     At Bob's Bazaar of Wonders, we're not just your average online shop; we're purveyors of the extraordinary,
                     the eccentric, and the downright delightful.
-                </p><br/>
+                </p>
                 <p>Step into a world where each click unlocks a treasure trove of curiosities.
                     From our enchanted collection of goods, handpicked by the ever-curious Bob himself,
                     to the wonders that await around every virtual corner, your journey through our
