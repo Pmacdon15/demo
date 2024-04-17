@@ -84,7 +84,7 @@ export default function Page() {
                             ) : (
                                 <Image
                                     className={styles.productImage}
-                                    src="/placeHolder.svg"
+                                    src="/placeHolder.png"
                                     alt={product.name}
                                     width="225"
                                     height="150"
