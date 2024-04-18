@@ -14,6 +14,7 @@ export default function Page() {
         { id: 2, name: 'Coffee Mugs', description: 'Upload your own photo for a custom coffee mug.', price: 30, imageLoaded: true},
         { id: 3, name: 'Place Mats', description: 'Upload your own photo for a custom place mat.', price: 20 , imageLoad:false },
         { id: 4, name: 'Product 4', description: 'Product 4 description', price: 69.99 , imageLoad:false},
+        { id: 4, name: 'Product 4', description: 'Product 4 description', price: 69.99 , imageLoad:false},
     ];
 
     useEffect(() => {
@@ -56,6 +57,8 @@ export default function Page() {
                 At Bob&apos;s Bazaar of Wonders, we&apos;re not just your average online shop; we&apos;re purveyors of the extraordinary,
                 the eccentric, and the downright delightful.
             </p>
+            </div>
+            <div className={styles.siteDescription}>
             <p>Step into a world where each click unlocks a treasure trove of curiosities.
                 From our enchanted collection of goods, handpicked by the ever-curious Bob himself,
                 to the wonders that await around every virtual corner, your journey through our
@@ -63,9 +66,9 @@ export default function Page() {
             </p>
         </div>
     
-        {chunkArray(products, chunkSize).map((rowProducts, rowIndex) => (
-            <div key={rowIndex} className={styles.productRow}>
-                {rowProducts.map(product => {
+        
+            <div  className={styles.productRow}>
+                {products.map(product => {
                     let imgSrc = `/product${product.id}.png`; // Static import                       
                     return (
                         <div key={product.id} className={styles.product}>
@@ -95,7 +98,7 @@ export default function Page() {
                     );
                 })}
             </div>
-        ))}
+        
     
     </main>
     
