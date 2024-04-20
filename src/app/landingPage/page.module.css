@@ -1,0 +1,119 @@
+.main{   
+    min-height: 100vh;
+    
+    /* width:100%;  */
+    background-image: linear-gradient(to top left, #0c3ba8de, #2c98bc);
+    background-blend-mode: soft-light;
+    color:rgb(210, 224, 237);
+    font-family: serif;
+    align-content: center;
+    display:flex;
+    
+}
+.title{
+    /* margin-top: -150px; */
+    font-size: 30px;
+    /* float: left; */
+    margin-left:20px;
+    
+}
+
+
+.companyDescription{    
+    width:75%;
+   
+    
+    /* display: flex; */
+}
+.companyDescription>p{
+    text-indent: 40px;
+    margin-bottom:40px;
+}
+.companyDescription>:nth-last-child(1){
+    margin-bottom: 0px;
+}
+.leftSide{
+    margin-top: 60px;
+    margin-left: 100px;
+    font-size: 20px;
+    float: left;
+}
+.leftSide>h1{
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+.rightSide{
+    height : 60vh;
+    /* width: 600px; */
+
+    background-color: #68b5ce;
+    float:right;
+    border-radius: 10px;
+    margin-right: 80px;
+    margin-top: 140px;
+    /* margin-top: 150px; */
+    display:flex;
+    padding: 10px;
+}
+
+.rightSide>form{
+    display:flex;
+    flex-direction: column;
+    margin: 20px;  
+    width:350px;  
+    padding:20px;
+}
+.rightSide>form>TextField{
+    margin-top: 20px;
+    background-color: #0c3ba8de;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.rightSide>form>Button{
+    margin-top: 20px;
+    background-color: #0c3ba8de;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.logo{
+    /* margin-top: auto;
+    margin-left: 20px;
+    margin-right:20px; */
+
+    margin:auto;
+    margin-right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    
+    border-radius:10px ;
+}
+
+/* for small screens */
+
+@media only screen and (max-width: 1300px) {
+    .main{
+        flex-direction: column;
+       display: flex;
+    }
+    .rightSide{
+        width:100%;
+        height:auto;
+        /* flex-direction: column; */
+    }
+    .logo{
+        margin:auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .rightSide{
+       
+        flex-direction: column;
+    }
+}
