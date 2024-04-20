@@ -92,14 +92,6 @@
     margin-bottom:10px;
 }
 
-/* for small screens */
-@media (max-width: 1200px) {
-   
-    .productRow {
-        width: 90%;    
-    }
-}
-
 
 
 .footer{
@@ -120,3 +112,19 @@
     height: 100%;
     /* background-color: rgba(4, 56, 104, 0.614); */
 }
+
+/* for small screens */
+@media (max-width: 1200px) {
+   
+    .productRow {
+        width: 90%;    
+    }
+}
+
+@media (max-width: 600px) {
+   
+    .footer{
+        flex-direction: column;
+        height:350px;
+    }
+ }
