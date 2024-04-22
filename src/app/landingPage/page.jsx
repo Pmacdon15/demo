@@ -37,7 +37,7 @@ export default function Page() {
             <div className={styles.rightSide}>
 
                 <form >
-                    <h2 className={styles.title} >Reach Out we want to hear from you!!</h2>
+                    <h2 className={styles.title} >Reach out we want to hear from you!!</h2>
                     <Label htmlFor="name">Full Name</Label>
                     <TextField id="fullName" type="text" required />
                     <Label htmlFor="email">Email</Label>
