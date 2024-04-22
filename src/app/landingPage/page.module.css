@@ -68,6 +68,10 @@
     
     
 }
+.rightSide>form>h2{
+    
+    margin-bottom: 20px;
+}
 .rightSide>form>TextField{
     margin-top: 20px;
     background-color: #0c3ba8de;
