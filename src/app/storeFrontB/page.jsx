@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import styles from './page.module.css';
 import Button from '@mui/material/Button';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import Link from 'next/link';
 
 
@@ -68,7 +69,7 @@ export default function Page() {
                                     height="150"
                                 />
                             )}
-                            <Button variant="outlined">Add to Cart</Button>
+                            <Button variant="contained" endIcon={<AddShoppingCartIcon />}> Add to cart</Button>
                         </div>
                     );
                 })}
@@ -80,7 +81,7 @@ export default function Page() {
                     <li><p>Item 3</p></li>
                    <li><p>SubTotal</p></li>
                     </ul>
-                    <Button variant="outlined">Proceed to check out</Button>
+                    <Button variant="contained">Proceed to check out</Button>
                 </div>
 
             </div>

@@ -7,11 +7,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import styles from './page.module.css';
 import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 export default function Page() {
 
     const [screenWidth, setScreenWidth] = useState(0);
-    const chunkSize= 3;
+    const chunkSize = 3;
     const [displayAmount, setDisplayAmount] = useState(2.4);
 
     const products = [
@@ -33,7 +35,7 @@ export default function Page() {
                 //setChunkSize(1);
                 setDisplayAmount(1.9);
             } else {
-                
+
                 setDisplayAmount(.9);
             }
 
@@ -93,10 +95,10 @@ export default function Page() {
                         key={rowIndex}
                         dots
                         style={{ width: '80%', margin: 'auto', marginTop: '40px' }}
-                    infinite
-                    speed={500}
-                    slidesToShow={displayAmount}
-                    slidesToScroll={1}                    
+                        infinite
+                        speed={500}
+                        slidesToShow={displayAmount}
+                        slidesToScroll={1}
 
                     >
 
@@ -124,14 +126,26 @@ export default function Page() {
                                             height="150"
                                         />
                                     )}
-                                    <Button variant="outlined">Add to Cart</Button>
+                                    <Button variant="contained" endIcon={<AddShoppingCartIcon />}> Add to cart</Button>
+
                                 </div>
+                                
                             </div>
                         ))}
 
                     </Slider>
                 </div>
             ))}
+            <div className={styles.cart}>
+                    <h2>Your Cart:</h2>
+                    <ul>
+                    <li><p>Item 1</p></li>
+                    <li><p>Item 2</p></li>
+                    <li><p>Item 3</p></li>
+                   <li><p>SubTotal</p></li>
+                    </ul>
+                    <Button variant="contained">Proceed to check out</Button>
+                </div>
             <footer className={styles.footer}>
                 <div className={styles.footerDiv} >
                     <p>1234 Main Street</p>

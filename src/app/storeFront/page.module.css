@@ -93,7 +93,19 @@
     margin-bottom:10px;
 }
 
-
+.cart {    
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(154, 173, 191, 0.258);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    height: 350px;    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 .footer{
     display: flex;
